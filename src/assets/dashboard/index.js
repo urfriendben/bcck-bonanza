@@ -10,7 +10,7 @@ import moto from './moto.png';
 import esport from './esport.png';
 import league from './league.png';
 
-export default {
+const images = {
   pwe,
   eb,
   cc,
@@ -22,4 +22,6 @@ export default {
   moto,
   esport,
   league
-}
+};
+
+export default images;

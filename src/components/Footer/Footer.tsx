@@ -2,7 +2,7 @@ import logo from '@/assets/logo.svg';
 import './Footer.scss';
 import { connect } from 'react-redux';
 
-function Footer({}) {
+function Footer() {
 
   return (
     <div className="footer">
