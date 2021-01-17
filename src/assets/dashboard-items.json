@@ -65,7 +65,7 @@
             "position": "bottom-right",
             "class": "btn btn-min no-mobile",
             "css": {
-              "fontSize": "2em"
+              "fontSize": "1.2em"
             }
           }
         }
@@ -107,7 +107,7 @@
             "position" : "bottom-right",
             "class": "btn btn-min no-mobile",
             "css": {
-              "fontSize": "2em"
+              "fontSize": "1.2em"
             }
           }
         }
