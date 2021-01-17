@@ -24,10 +24,9 @@ function Home({dataItems}) {
       isMultirow = dataItems[index - 1].items.length > 2;
     }
 
-    return item.items.length > 1 ?
-      <div key={`group-${index}`} className="container">
-        {_.reduce(_.map(item.items, (it) => getItem(it, false, isMultirow)), (prev, curr) => [prev, '', curr])}
-      </div> : getItem(item.items[0], true, isMultirow);
+    return <div key={`group-${index}`} className="container">
+        {_.reduce(_.map(item.items, (it) => getItem(it, item.items.length === 1, isMultirow)), (prev, curr) => [prev, '', curr])}
+      </div>;
   });
 
   return (

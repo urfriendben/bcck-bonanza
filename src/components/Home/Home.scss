@@ -6,12 +6,6 @@
   display: flex;
   flex-wrap: wrap;
   color: $base-color;
-  >div:nth-child(odd) {
-    margin-right: 10px;
-  }
-  >div:nth-child(even) {
-    margin-left: 10px;
-  }
   >div:nth-child(n+3) {
     margin-top: 20px;
   }
@@ -64,6 +58,7 @@
   }
   .item.single {
     height: calc(18vw - 10px);
+    width: calc(100% - 20px);
   }
   .item.single.multi-row {
     height: 36vw;
