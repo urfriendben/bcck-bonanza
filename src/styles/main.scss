@@ -1,0 +1,52 @@
+@import '@/styles/variables.scss';
+
+.App {
+  width: 100vw;
+  min-height: 100vh;
+  background: #2A2A2A;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-fill-height {
+  height: auto;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  font-size: $btn-font-size;
+
+  &.btn-min {
+    color: $base-color;
+    background: transparent;
+    border: none;
+    padding-bottom: 5px!important;
+    border-bottom: 2px solid transparent;
+  }
+
+  &.btn-default {
+    background-color: $btn-default-background;
+    padding: 5px 15px;
+    border-radius: 2px;
+  }
+
+  &.active {
+    border-bottom: 2px solid #F00000;
+  }
+
+  &.important {
+    background-color: $btn-important-background;
+    color: $base-color;
+  }
+}
+
+@media (max-width:924px) {
+  .mobile-fill-height {
+    height: 100vh;
+  }
+
+  .no-mobile {
+    display: none;
+  }
+}

@@ -1,0 +1,117 @@
+[
+  {
+    "items": [
+      {
+        "image": "pwe",
+        "text": {
+          "value": "PLAY<br/>WIN<br/>EXCITE",
+          "position": "center",
+          "css": {
+            "fontSize": "3.5em"
+          },
+          "button": {
+            "value": "Get Started!",
+            "position": "center",
+            "class": "btn-default important",
+            "css": {
+              "fontSize": "1.2em"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "items": [
+      {
+        "image": "eb"
+      },
+      {
+        "image": "rb",
+        "css": {
+          "backgroundPosition": "center top"
+        }
+      },
+      {
+        "image": "cc",
+        "css": {
+          "backgroundPosition": "center"
+        }
+      },
+      {
+        "image": "cp",
+        "css": {
+          "backgroundPosition": "center"
+        }
+      }
+    ]
+  },
+  {
+    "items": [
+      {
+        "image": "lgwf",
+        "css": {
+          "backgroundPosition": "center bottom"
+        },
+        "text": {
+          "value": "LIVE GAMES<br/><span class='no-mobile'>WITH FRIENDS</span>",
+          "position": "center",
+          "css": {
+            "fontSize": "2.5em",
+            "textAlign": "center"
+          },
+          "button": {
+            "value": "EXPLORE >",
+            "position": "bottom-right",
+            "class": "btn btn-min no-mobile",
+            "css": {
+              "fontSize": "2em"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "items": [
+      {
+        "image": "cleo"
+      },
+      {
+        "image": "soccer"
+      }
+    ]
+  },
+  {
+    "items": [
+      {
+        "image": "moto"
+      },
+      {
+        "image": "esport"
+      }
+    ]
+  },
+  {
+    "items": [
+      {
+        "image": "league",
+        "text": {
+          "value": "LOVE PLAYING?<br/>JOIN THE LEAGUE",
+          "position": "top-left",
+          "css": {
+            "fontSize": "2.3em"
+          },
+          "button": {
+            "value": "APPLY NOW >",
+            "position" : "bottom-right",
+            "class": "btn btn-min no-mobile",
+            "css": {
+              "fontSize": "2em"
+            }
+          }
+        }
+      }
+    ]
+  }
+]

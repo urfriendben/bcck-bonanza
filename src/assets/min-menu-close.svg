@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="32px" viewBox="0 0 33 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 3</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile-Menu" transform="translate(-355.000122, -26.000000)">
+            <rect id="Rectangle-5" fill="#000000" x="0" y="0" width="414" height="896"></rect>
+            <g id="Group-3" transform="translate(355.443237, 25.999918)" fill="#D3D3D3">
+                <g id="Group-2" transform="translate(15.556349, 16.000067) rotate(-45.000000) translate(-15.556349, -16.000067) translate(-4.443649, 14.000068)">
+                    <rect id="Rectangle-6" x="0.000122070312" y="0.000122070312" width="40" height="4"></rect>
+                </g>
+                <g id="Group" transform="translate(16.000626, 15.556348) rotate(45.000000) translate(-16.000626, -15.556348) translate(-3.999372, 13.556348)">
+                    <rect id="Rectangle-8" x="0" y="0.000122070312" width="40" height="4"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,99 @@
+@import '@/styles/variables.scss';
+
+.topbar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.app-bar {
+  background-color: #000;
+  padding-left: $base-padding-horizontal;
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  padding: 15px 0px;
+}
+
+.nav-bar {
+  flex-grow: 1;
+  height: inherit;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 30px 0 70px;
+  .nav-item {
+    padding: 0px 20px;
+  }
+  .nav-item:first-of-type {
+    padding-left: 0px;
+  }
+}
+
+.util-bar {
+  flex-grow: 0;
+  .user-bar, .support-bar {
+    padding: 10px $base-padding-horizontal 10px 0;
+    display: flex;
+    justify-content: space-between;
+    .btn {
+      margin-left: 15px;
+    }
+    .btn:first-of-type {
+      margin-left: 0!important;
+    }
+  }
+  .support-bar {
+    align-items: flex-end;
+    padding-bottom: 0;
+  }
+}
+
+.util-menu-icon {
+  display: none;
+}
+
+.min-menu {
+  display: none;
+  padding: 70px $base-padding-horizontal;
+  flex-grow: 1;
+  background: #000;
+  font-size: 1.3em;
+  .user-bar {
+    display: flex;
+    margin-bottom: 50px;
+    .btn {
+      flex-grow: 1;
+      margin-left: 40px;
+      display: flex;
+      flex-direction: column;
+    }
+    .btn:first-of-type {
+      margin-left: 0!important;
+    }
+  }
+}
+
+@media (max-width:924px) {
+  .nav-bar, .util-bar {
+    display: none;
+  }
+
+  .util-menu-icon {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-grow: 1;
+    img {
+      margin-right: $base-padding-horizontal;
+    }
+  }
+
+  .min-menu {
+    display: flex;
+    flex-direction: column;
+  }
+}

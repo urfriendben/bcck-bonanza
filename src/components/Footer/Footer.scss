@@ -1,0 +1,31 @@
+@import '@/styles/variables.scss';
+
+.footer {
+  padding: 30px $base-padding-horizontal;
+  display: flex;
+  background: #000;
+  align-items: flex-start;
+  font-size: 0.8em;
+  margin-top: auto;
+  .logo {
+    width: 80px;
+  }
+  .links-container {
+    display: flex;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    margin-left: 80px;
+  }
+}
+
+@media (max-width:924px) {
+  .footer {
+    flex-direction: column;
+  }
+  .links:first-of-type {
+    margin-left: 0;
+  }
+}
