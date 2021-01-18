@@ -1,3 +1,4 @@
+import React from 'react';
 import './styles/fonts.scss';
 import './styles/main.scss';
 import { Provider } from 'react-redux';

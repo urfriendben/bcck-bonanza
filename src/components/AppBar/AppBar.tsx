@@ -1,3 +1,4 @@
+import React from 'react';
 import logo from '@/assets/logo.svg';
 import menu from '@/assets/min-menu.svg';
 import menuClose from '@/assets/min-menu-close.svg';

@@ -1,3 +1,4 @@
+import React from 'react';
 import './Home.scss';
 import { connect } from 'react-redux';
 import _ from 'lodash';

@@ -5,6 +5,7 @@
   "dependencies": {
     "@babel/core": "7.12.3",
     "@babel/preset-react": "^7.12.10",
+    "@jest/test-result": "^26.6.2",
     "@pmmmwh/react-refresh-webpack-plugin": "0.4.2",
     "@svgr/webpack": "5.4.0",
     "@testing-library/jest-dom": "^5.11.4",
@@ -47,7 +48,10 @@
     "jest": "26.6.0",
     "jest-circus": "26.6.0",
     "jest-resolve": "26.6.0",
+    "jest-transform-css": "^2.1.0",
+    "jest-transform-file": "^1.1.1",
     "jest-watch-typeahead": "0.6.1",
+    "jsdom-screenshot": "^4.0.0",
     "lodash": "^4.17.20",
     "mini-css-extract-plugin": "0.11.3",
     "node-sass": "4.14.1",
@@ -85,7 +89,8 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "test:snapshot": "npm run build && start-server-and-test start http://localhost:3000 test"
   },
   "eslintConfig": {
     "extends": [
@@ -113,6 +118,7 @@
       "src/**/*.{js,jsx,ts,tsx}",
       "!src/**/*.d.ts"
     ],
+    "preset": "ts-jest",
     "setupFiles": [
       "react-app-polyfill/jsdom"
     ],
@@ -126,9 +132,11 @@
     "testEnvironment": "jsdom",
     "testRunner": "/Users/benjaminchin/Documents/Frontend Assignment/submission/bcck-bonanza/node_modules/jest-circus/runner.js",
     "transform": {
+      "^.+\\.ts?$": "ts-jest",
       "^.+\\.(js|jsx|mjs|cjs|ts|tsx)$": "<rootDir>/node_modules/babel-jest",
       "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
-      "^(?!.*\\.(js|jsx|mjs|cjs|ts|tsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
+      "^(?!.*\\.(js|jsx|mjs|cjs|ts|tsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js",
+      "\\.(jpg|jpeg|png|gif|webp|svg)$": "jest-transform-file"
     },
     "transformIgnorePatterns": [
       "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs|cjs|ts|tsx)$",
@@ -136,6 +144,7 @@
     ],
     "modulePaths": [],
     "moduleNameMapper": {
+      "^@/(.*)$": "<rootDir>/src/$1",
       "^react-native$": "react-native-web",
       "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
     },
@@ -161,5 +170,11 @@
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "jest-image-snapshot": "^4.3.0",
+    "puppeteer": "^5.5.0",
+    "start-server-and-test": "^1.11.7",
+    "ts-jest": "^26.4.4"
   }
 }
