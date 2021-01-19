@@ -32,6 +32,7 @@ function AppBar({app, toggleMenu}) {
     <img className="logo" onClick={() => toggleMenu()} src={menuClose} alt="menu close" /> :
     <img className="logo" onClick={() => toggleMenu()} src={menu} alt="menu" />;
 
+  // Mobile buttons
   const minMenu = app.menu ?
     <div className="min-menu">
       <div className="user-bar">
@@ -57,6 +58,7 @@ function AppBar({app, toggleMenu}) {
             {_.reduce(adddedNavItems, (prev, curr) => [prev, ', ', curr])}
           </div>
         </div>
+        {/* Mobile version of util-bar */}
         <div className="util-menu-icon">
           {menuIcon}
         </div>

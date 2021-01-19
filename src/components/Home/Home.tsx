@@ -5,6 +5,8 @@ import _ from 'lodash';
 import dashboardImgs from '@/assets/dashboard';
 
 function Home({dataItems}) {
+
+  // Product card generator
   function getItem(item, single, multiRow) {
     const button = item.text && item.text.button ? <span className={`btn ${item.text.button.class} ${item.text.button.position}`} style={item.text.button.css}>{item.text.button.value}</span> : null;
 
@@ -12,12 +14,14 @@ function Home({dataItems}) {
       <p className={`text ${item.text.position}`} dangerouslySetInnerHTML={{__html: item.text.value}} style={item.text.css}></p>
       {button}
     </div> : null;
+
     return <div key={item.image} className={`item${single ? ' single' : ''}${multiRow ? ' multi-row' : ''} center`} style={{background: `${item.text ? 'linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), ' : ''}url(${dashboardImgs[item.image] || item.image})`, ...item.css}}>
       {text}
     </div>;
   }
 
   const items = _.map(dataItems, (item, index) => {
+    // Design concept is expected to assume a 50/50 grid design - every level is 2 column
     let isMultirow = false;
     if (index % 2 === 0 && dataItems.length > 1 && index !== dataItems.length - 1) {
       isMultirow = dataItems[index + 1].items.length > 2;
