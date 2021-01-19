@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).\
 Site available for viewing at [https://bcck-bonanza.herokuapp.com/](https://bcck-bonanza.herokuapp.com/).
 
 ## Available Scripts
